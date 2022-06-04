@@ -2,10 +2,10 @@ name: CI-CD1
 on:
   push:
     branches:
-      - master
+      - inhohwangg-/-socket_test
   pull_request:
     branches:
-      - master
+      - inhohwangg-/-socket_test
 jobs:
   build:
     runs-on: ubuntu-18.04
