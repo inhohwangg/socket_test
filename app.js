@@ -28,6 +28,6 @@ io.on('connection', socket => {
 })
 
 
-http.listen(3000, function(){
+server.listen(3000, function(){
     console.log('3000포트로 서버가 실행되었습니다.')
 })
