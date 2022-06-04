@@ -9,6 +9,6 @@ io.on('connection', socket => {
 })
 
 
-http.listen(4000, function(){
-    console.log('listening on port 4000')
+http.listen(3000, function(){
+    console.log('3000포트로 서버가 실행되었습니다.')
 })
