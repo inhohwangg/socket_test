@@ -6,7 +6,7 @@ const cors = require('cors')
 const server = http.createServer(app)
 
 app.use(cors())
-//ㅎㅇㅎㅇ
+
 const io = new Server(server, {
     cors : {
         origin : "http://localhost:3000",
@@ -14,8 +14,8 @@ const io = new Server(server, {
     }
 })
 
-io.on('connection', socket => {
-
+io.on('connection', (socket) => {
+    console.log(`${socket.id} 입장`)
     console.log('소켓 연결되었습니다.')
     // socket.on('join_room', (data)=> {
     //     socket.join(data)
