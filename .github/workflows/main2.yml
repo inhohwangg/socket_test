@@ -20,7 +20,7 @@ jobs:
           key: ${{ secrets.REMOTE_SSH_KEY }}
           port: ${{ secrets.REMOTE_SSH_PORT }}
           script: |
-            cd /home/ubuntu/socket_test
+            cd /home/ubuntu/socket_test/app.js
             # git config --global --add safe.directory /home/ubuntu/socket_test
             sudo git pull
             # sudo npm update =>
