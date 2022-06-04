@@ -14,8 +14,9 @@ const io = new Server(server, {
     }
 })
 
+//ㅎㅇ
 io.on('connection', (socket) => {
-    console.log(`${socket.id} 입장`)
+    console.log(`${socket.id}입장`)
     console.log('소켓 연결되었습니다.')
     // socket.on('join_room', (data)=> {
     //     socket.join(data)
