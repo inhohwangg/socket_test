@@ -18,9 +18,9 @@ const io = new Server(server, {
 io.on('connection', socket => {
 
     console.log('소켓 연결되었습니다.')
-    socket.on('join_room', (data)=> {
-        socket.join(data)
-    })
+    // socket.on('join_room', (data)=> {
+    //     socket.join(data)
+    // })
 
     socket.on('send_message',(data)=> {
         socket.to(data).emit('receive_message', data)
