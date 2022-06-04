@@ -7,14 +7,13 @@ const server = http.createServer(app)
 
 app.use(cors())
 
-//허허
 const io = new Server(server, {
     cors : {
         origin : "http://localhost:3000",
         methods:["GET,POST"]
     }
 })
-//gd
+
 io.on('connection', (socket) => {
     console.log(`${socket.id}입장`)
     console.log('소켓 연결되었습니다.')
@@ -32,6 +31,7 @@ io.on('connection', (socket) => {
     })
 })
 
+//console.log(아나 왜 안되냐)
 
 server.listen(3000, ()=>{
     console.log('3000포트로 서버가 실행되었습니다.')
