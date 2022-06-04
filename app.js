@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
     })
 })
 
-//console.log(아나 왜 안되냐)
+//12345
 
 server.listen(3000, ()=>{
     console.log('3000포트로 서버가 실행되었습니다.')
