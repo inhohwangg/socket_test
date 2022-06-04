@@ -14,7 +14,7 @@ const io = new Server(server, {
     }
 })
 
-//ㅎㅇ
+//ㅎㅇd
 io.on('connection', (socket) => {
     console.log(`${socket.id}입장`)
     console.log('소켓 연결되었습니다.')
