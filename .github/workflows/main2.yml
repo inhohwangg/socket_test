@@ -1,11 +1,9 @@
 name: CI-CD1
 on:
   push:
-    branches:
-      - inhohwangg-/-socket_test
+    branches: [ "inhohwangg-/-socket_test" ]
   pull_request:
-    branches:
-      - inhohwangg-/-socket_test
+    branches: [ "inhohwangg-/-socket_test" ]
 jobs:
   build:
     runs-on: ubuntu-18.04
