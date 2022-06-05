@@ -27,6 +27,6 @@ io.on("connection", (socket)=> {
     })
 })
 
-server.listen(3001, ()=> {
+server.listen(3000, ()=> {
     console.log('3001포트로 서버가 켜졌습니다.')
 })
