@@ -14,7 +14,7 @@ const io = new Server(server, {
 })
 
 app.use(cors())
-app.use(express.urlencoded({extended: false}), router)
+app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
 io.on('connection', (socket) => {
