@@ -5,7 +5,6 @@ const {Server} = require('socket.io')
 const cors = require('cors')
 const server = http.createServer(app)
 
-app.use(cors())
 
 const io = new Server(server, {
     cors : {
@@ -13,6 +12,10 @@ const io = new Server(server, {
         methods:["GET,POST"]
     }
 })
+
+app.use(cors())
+app.use(express.urlencoded({extended: false}), router)
+app.use(express.json())
 
 io.on('connection', (socket) => {
     console.log(`${socket.id}입장`)
